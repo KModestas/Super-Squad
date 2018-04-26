@@ -31,6 +31,12 @@ class SquadStats extends Component {
           <li className="list-group-item">
             <b>Overall Strength:</b> {this.strength()}
           </li>
+          <li className="list-group-item">
+            <b>Overall Intelligence:</b> {this.intelligence()}
+          </li>
+          <li className="list-group-item">
+            <b>Overall Speed:</b> {this.speed()}
+          </li>
         </ul>
       </div>
     );
