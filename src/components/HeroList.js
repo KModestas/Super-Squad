@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'ract-redux';
+import { connect } from 'react-redux';
+import '../styles/index.css';
 
 class HeroList extends Component {
   render() {
@@ -22,3 +23,11 @@ class HeroList extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    heroes: state.heroes
+  };
+}
+
+export default connect(mapStateToProps, null)(HeroList);
