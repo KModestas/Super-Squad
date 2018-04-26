@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CharacterList from './CharacterList';
-
 import '../styles/index.css';
 
 
@@ -8,7 +7,7 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        <h2>Supersquad</h2>
+        <h2>Super Squad</h2>
         <CharacterList />
       </div>
     );
