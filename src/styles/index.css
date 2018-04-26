@@ -17,5 +17,5 @@ body {
 }
 
 .list-item {
-  display: inline-block !important;
+  display: inline-block;
 }
