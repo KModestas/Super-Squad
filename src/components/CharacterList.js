@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { addCharacterById } from '../actions';
 
 class CharacterList extends Component {
@@ -33,8 +32,10 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ addCharacterById }, dispatch);
-}
+// this is the longer version instead of just passing in addCharacterId as the second argument of connect function
 
-export default connect(mapStateToProps, mapDispatchToProps)(CharacterList);
+// function mapDispatchToProps(dispatch) {
+//   return bindActionCreators({ addCharacterById }, dispatch);
+// }
+
+export default connect(mapStateToProps, { addCharacterById })(CharacterList);
